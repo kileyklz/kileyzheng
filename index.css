@@ -1,20 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
 }
 
 /* Navbar Styling */
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
     padding: 15px 20px;
-    z-index: 3;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -33,12 +32,13 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    flex: 1;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -63,8 +63,8 @@ p {
     position: absolute;
     top: 20%;
     left: 0;
-    width: 30%;
-    height: 150px;
+    width: 45%;
+    height: 280px;
     background-color: #B8D8E6; /* Professional pastel blue */
     z-index: 1;
 }
