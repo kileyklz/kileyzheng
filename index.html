@@ -19,18 +19,17 @@
 
 <body>
 
+<!-- Animated Logo (Top Left Corner) -->
+<div class="logo-fixed">
+    <video autoplay muted playsinline>
+        <source src="Media/KLogo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
 <!-- Navigation Bar -->
 <nav class="navbar">
     <div class="nav-container">
-        <!-- Animated Logo (video) -->
-        <div class="logo">
-            <video autoplay muted playsinline>
-                <source src="K.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        <!-- Navigation Links -->
         <ul>
             <li><a href="index.html">Portfolio</a></li>
             <li><a href="#">About</a></li>
@@ -39,15 +38,32 @@
     </div>
 </nav>
 
+
     <!-- Hero Section -->
     <section class="hero">
-        <div class="rectangle"></div>
 
         <div class="hero-content">
             <p class="text-muted">Design Work Portfolio</p>
             <h1>— Hi! I'm Kiley, an aspiring designer <br> currently studying at the University of Toronto. </h1>
+            <!-- <p class="text-muted">Scroll down to view my work!</p> -->
         </div>
     </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="portfolio-item">
+            <a href="project1.html">
+                <img src="Media/TIC Portfolio.png" alt="Project 1">
+            </a>
+        </div>
+        <div class="portfolio-item">
+            <a href="project2.html">
+                <img src="project2.jpg" alt="Project 2">
+            </a>
+        </div>
+    </section>
+
+
 
 </body>
 </html>
