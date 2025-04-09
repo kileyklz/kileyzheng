@@ -180,7 +180,7 @@ html {
 @media (max-width: 768px) {
     .portfolio {
       grid-template-columns: 1fr; /* stack items on top of each other */
-      padding: 25px 15px;
+      padding: 25px 5px;
       gap: 20px;
     }
   /*   .portfolio-item {
