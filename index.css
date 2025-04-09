@@ -182,6 +182,7 @@ html {
       grid-template-columns: 1fr; /* stack items on top of each other */
       padding: 25px 15px;
       gap: 20px;
+      justify-content: center;
     }
   /*   .portfolio-item {
         max-width: 400px;
