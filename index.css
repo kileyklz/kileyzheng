@@ -219,3 +219,11 @@ html {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .portfolio {
+      grid-template-columns: 1fr; /* stack items on top of each other */
+      padding: 25px 15px;
+      gap: 20px;
+    }
+  }
+  
