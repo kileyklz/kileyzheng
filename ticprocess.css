@@ -119,6 +119,8 @@ display: none;
     width: auto;
     display: block;
     z-index: 999;
+    outline: 4px solid white;
+    outline-offset: -4px;
 }
 
 }

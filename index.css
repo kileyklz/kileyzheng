@@ -68,6 +68,8 @@ body {
     height: 150px; 
     width: auto;
     display: block;
+    outline: 4px solid white;
+    outline-offset: -4px;
 }
 
 
