@@ -19,6 +19,20 @@
 
 <body>
 
+<!-- Hamburger Menu (Mobile Only) -->
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="hamburger">&#9776;</label>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
 <!-- Animated Logo (Top Left Corner) -->
 <div class="logo-fixed">
     <video autoplay muted playsinline>
@@ -27,49 +41,37 @@
     </video>
 </div>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-          <!--  <img src="Media/contactme.png" alt="Image of Contact Me Heading" class="contact-img">  -->
+<div class="contact-section">
+<!-- Left Side: Video -->
+<div class="contact-left">
+    <video autoplay muted playsinline class="contact-video">
+    <source src="Media/contactme.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+</div>
 
+<!-- Right Side: Text + Form -->
+<div class="contact-right">
+    <div class="contact-text">
+    <h2>Connect with me! ☺</h2>
+    <p>
+        Feel free to reach out for collaboration, questions, or just to talk. I'm here and happy to connect!
+    </p>
+    </div>
 
+    <form action="https://formsubmit.co/kileyzheng@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="thankyou.html">
 
-          <div class="contact-section">
-            <!-- Left Side: Video -->
-            <div class="contact-left">
-              <video autoplay muted playsinline class="contact-video">
-                <source src="Media/contactme.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" rows="5" placeholder="Message" required></textarea>
 
-            <!-- Right Side: Text + Form -->
-            <div class="contact-right">
-              <div class="contact-text">
-                <h2>Connect with me! ☺</h2>
-                <p>
-                  Feel free to reach out for collaboration, questions, or just to talk. I'm here and happy to connect!
-                </p>
-              </div>
-          
-              <form action="https://formsubmit.co/kileyzheng@gmail.com" method="POST">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="thankyou.html">
-          
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" rows="5" placeholder="Message" required></textarea>
-          
-                <button type="submit">Send Message</button>
-              </form>
-            </div>
-          </div>
+    <button type="submit">Send Message</button>
+    </form>
+</div>
+</div>
           
  
 

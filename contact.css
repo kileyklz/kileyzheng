@@ -13,7 +13,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    z-index: 999; /* Add this */
+    z-index: 999; 
 
 }
 
@@ -23,6 +23,7 @@ body {
     top: 20px;
     display: flex;
     gap: 30px;
+    z-index: 1002; 
 }
 
 .navbar li a {
@@ -58,7 +59,6 @@ body {
     position: relative;
     top: 20px;
     left: 20px;
-    z-index: 1000;
     pointer-events: none;
 
 }
@@ -67,6 +67,62 @@ body {
     height: 150px; 
     width: auto;
     display: block;
+}
+
+
+/* Hamburger (hidden on desktop) */
+#menu-toggle {
+display: none;
+}
+
+.hamburger {
+display: none;
+}
+
+/* === MOBILE STYLES ONLY === */
+@media (max-width: 768px) {
+/* Hamburger icon becomes visible */
+.hamburger {
+    display: block;
+    font-size: 2rem;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Hide nav links by default on mobile */
+.navbar ul {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1002; 
+    text-align: center;
+}
+
+.navbar ul li {
+    margin: 10px 0;
+}
+
+/* Show nav when menu is toggled */
+#menu-toggle:checked + .hamburger + .navbar ul {
+    display: flex;
+}
+
+.logo-fixed video {
+    height: 100px; 
+    width: auto;
+    display: block;
+    z-index: 999;
+}
+
 }
 
 
