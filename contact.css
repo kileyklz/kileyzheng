@@ -1,51 +1,240 @@
-/* Navbar Styling */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Navbar Container */
 .navbar {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 15px;
+    right: 25px;
     width: 100%;
-    background-color: white;
-    padding: 15px 20px;
-    z-index: 1000;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link {
-    color: #333;
-    font-size: 1rem;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #007bff;
-}
-
-.custom-shadow {
-    box-shadow: 1px 5px 8px #c5c5f1; 
-  }
-
-.profile-section {
     display: flex;
+    justify-content: flex-end;
+    z-index: 999; /* Add this */
+
+}
+
+/* Navigation Links */
+.navbar ul {
+    list-style: none;
+    top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #8c96f5;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+/* Fixed Logo in Top Left */
+.logo-fixed {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    pointer-events: none;
+
+}
+
+.logo-fixed video {
+    height: 150px; 
+    width: auto;
+    display: block;
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .contact-left {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-start; /* Pushes it left */
     align-items: center;
-    gap: 2rem;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  }
+  
+  .contact-video {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    border:0;
     object-fit: cover;
-}
-
-.social-icons i {
-    margin-right: 10px;
-    font-size: 24px;
-}
-
-.header {
-    background-color: #f8f9fa;
-    padding: 2rem;
-    border-bottom: 1px solid #ddd;
-}
+    outline: 4px solid white;
+    outline-offset: -4px;
+    margin-left: 0; /* Ensures no unwanted margin */
+  }
+  
+  
+  .contact-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  
+  .contact-text {
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .contact-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeInUp 1.2s ease;
+  }
+  
+  input,
+  textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #8c96f5;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    width: fit-content;
+  }
+  
+  button:hover {
+    background-color: #6b7ee5;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-left, .contact-right {
+      width: 100%;
+    }
+  
+    form {
+      align-items: center;
+    }
+  
+    input, textarea {
+      max-width: 100%;
+    }
+  
+    button {
+      align-self: center;
+    }
+  }
+  
+  
+  /* Fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-left, .contact-right {
+      width: 100%;
+    }
+  
+    form {
+      align-items: center;
+    }
+  
+    input, textarea {
+      max-width: 500px;
+    }
+  
+    button {
+      align-self: center;
+    }
+  }
+  
