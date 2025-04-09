@@ -70,6 +70,53 @@ body {
     display: block;
 }
 
+
+/* Hamburger (hidden on desktop) */
+#menu-toggle {
+display: none;
+}
+
+.hamburger {
+display: none;
+}
+
+/* === MOBILE STYLES ONLY === */
+@media (max-width: 768px) {
+/* Hamburger icon becomes visible */
+.hamburger {
+    display: block;
+    font-size: 2rem;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+/* Hide nav links by default on mobile */
+.navbar ul {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.navbar ul li {
+    margin: 10px 0;
+}
+
+/* Show nav when menu is toggled */
+#menu-toggle:checked + .hamburger + .navbar ul {
+    display: flex;
+}
+}
+
 /* Hero Section */
 .hero {
     position: relative;
