@@ -237,16 +237,16 @@ html {
 
 
 .site-footer {
-    background-color: #e0e0e0; /* soft grey */
-    padding: 40px 20px;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
-    color: #555555;
-    margin-top: 80px;
-  }
-  
-  .site-footer p {
-    margin: 6px 0;
-  }
-  
+background-color: #e0e0e0; /* soft grey */
+padding: 40px 20px;
+text-align: center;
+font-family: 'Josefin Sans', sans-serif;
+font-size: 1rem;
+color: #555555;
+margin-top: 80px;
+}
+
+.site-footer p {
+margin: 6px 0;
+font-size: 1rem;         /* override global p styling */
+}
