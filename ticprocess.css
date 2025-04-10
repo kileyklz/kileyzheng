@@ -148,8 +148,8 @@ margin-bottom: 25px;
 
 .project-process h3 {
 font-size: 1.5rem;
-margin-top: 50px;
-margin-bottom: 20px;
+margin-top: 30px;
+margin-bottom: 10px;
 font-weight: 300;
 color: #444;
 }
@@ -161,3 +161,17 @@ color: #444;
 text-align: justify;
 }
 
+.site-footer {
+    background-color: #e0e0e0; /* soft grey */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    color: #555555;
+    margin-top: 80px;
+  }
+  
+  .site-footer p {
+    margin: 6px 0;
+  }
+  
