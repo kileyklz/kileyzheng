@@ -161,6 +161,44 @@ color: #444;
 text-align: justify;
 }
 
+
+@media (max-width: 768px) {
+.project-process {
+    padding: 40px 20px;
+}
+
+.background-content {
+    padding: 0 10px; /* Add horizontal spacing for mobile comfort */
+}
+
+.project-process h2 {
+    font-size: 1.8rem;
+}
+
+.project-process h3 {
+    font-size: 1.3rem;
+}
+
+.project-process p {
+    font-size: 1rem;
+}
+}  
+
+.site-footer {
+    background-color: #e0e0e0; /* soft grey */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    color: #555555;
+    margin-top: 80px;
+    }
+    
+    .site-footer p {
+    margin: 6px 0;
+    }
+      
+
 .site-footer {
     background-color: #e0e0e0; /* soft grey */
     padding: 40px 20px;
