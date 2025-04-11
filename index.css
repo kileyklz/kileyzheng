@@ -127,8 +127,8 @@ display: none;
 }
 
 .portfolio {
-    display: grid;
-    grid-template-columns: 1fr; /* stack items on top of each other */
+    display: grid !important;  /* Force grid layout */
+    grid-template-columns: 1fr !important; /* stack items on top of each other */
     padding: 25px 15px;
     gap: 20px;
     justify-content: center;
