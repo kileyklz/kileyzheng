@@ -132,9 +132,10 @@ display: none;
     gap: 20px;
     justify-content: center;
   }
-/*   .portfolio-item {
-      max-width: 400px;
-  } */
+  .portfolio-item {
+    width: 100%;
+    max-width: 100%;
+  }
 
 }
 
