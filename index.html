@@ -94,10 +94,23 @@
     </section>
 </div>
 
+<a href="#top" class="scroll-top-link">Back to top ↑</a>
+
 <footer class="site-footer">
     <p><strong>Built from scratch with love.</strong></p>
     <p>© 2025. Kiley Zheng.</p>
   </footer>
+  
+
+<script>
+document.querySelector('.scroll-top-link').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default jump
+    window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+    });
+});
+</script>
   
 
 </body>

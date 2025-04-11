@@ -126,6 +126,16 @@ display: none;
     z-index: 999;
 }
 
+.portfolio {
+    grid-template-columns: 1fr; /* stack items on top of each other */
+    padding: 25px 15px;
+    gap: 20px;
+    justify-content: center;
+  }
+/*   .portfolio-item {
+      max-width: 400px;
+  } */
+
 }
 
 /* Hero Section */
@@ -179,18 +189,6 @@ html {
 }
 
 
-@media (max-width: 768px) {
-    .portfolio {
-      grid-template-columns: 1fr; /* stack items on top of each other */
-      padding: 25px 15px;
-      gap: 20px;
-      justify-content: center;
-    }
-  /*   .portfolio-item {
-        max-width: 400px;
-    } */
-  }
-
 /* Portfolio Section */
 .portfolio-wrapper {
     width: 100%;
@@ -235,6 +233,22 @@ html {
     cursor: pointer;
 }
 
+.scroll-top-link {
+    display: block;
+    text-align: center;
+    margin: 60px auto 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #888;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  .scroll-top-link:hover {
+    color: #555; 
+    cursor: pointer;
+  }
+  
 
 .site-footer {
 background-color: #e0e0e0; /* soft grey */
@@ -248,5 +262,5 @@ margin-top: 80px;
 
 .site-footer p {
 margin: 6px 0;
-font-size: 1rem;         /* override global p styling */
+font-size: 1rem;        
 }

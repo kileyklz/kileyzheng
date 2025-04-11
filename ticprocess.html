@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body>
+<body id="top">
 
 <!-- Hamburger Menu (Mobile Only) -->
 <input type="checkbox" id="menu-toggle">
@@ -60,8 +60,12 @@
         </p>
     
         <h3><i>Original Website</i></h3>
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="450" src="https://embed.figma.com/design/Cxh9p7tYbwcJ3fa0LKYBej/Untitled?node-id=0-1&embed-host=share" allowfullscreen></iframe>
-
+        <div class="iframe-container">
+          <iframe src="https://embed.figma.com/design/Cxh9p7tYbwcJ3fa0LKYBej/Untitled?node-id=0-1&embed-host=share"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
     </div>
 </section>
     
@@ -88,9 +92,13 @@
       <h2>Research</h2>
       <p>Check out the payment processors research below ↓  </p>
       <a href="Media/TICPaymentResearch.pdf" target="_blank">View Payment Processors Research PDF</a>
-      <iframe src="https://1drv.ms/p/c/d429283f160c5cce/IQQYRStTlyMLTI4BVAl6AeCmATvBbff-zo2dY43yGA1pdSA?em=2&amp;wdAr=1.7777777777777777" width="900px" height="506px" 
-      frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" 
-      href="https://office.com/webapps">Office</a>.</iframe>
+      <div class="iframe-container">
+        <iframe src="https://1drv.ms/p/c/d429283f160c5cce/IQQYRStTlyMLTI4BVAl6AeCmATvBbff-zo2dY43yGA1pdSA?em=2&amp;wdAr=1.7777777777777777"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+      
       <p>This research played a pivotal role in shaping the direction of our project, as the selected payment processor would directly influence both the 
         functionality and design of the donation page. It was essential to understand each platform's integration options, user flow, branding flexibility, 
         and transaction fees in order to make an informed decision that aligned with both user expectations and the organization’s operational needs. </p>
@@ -107,8 +115,14 @@
     <div class="background-content">
       <h2>Wireframes & Prototypes</h2>
       <p>Check out the wireframes & prototypes created on Figma below ↓  </p>
-      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="900" height="506" 
-      src="https://embed.figma.com/design/gObZ70sVhfJR2Gtf5yRkiA/Turtle-Island?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+      <div class="iframe-container">
+        <iframe 
+          src="https://embed.figma.com/design/gObZ70sVhfJR2Gtf5yRkiA/Turtle-Island?node-id=0-1&embed-host=share" 
+          allowfullscreen 
+          style="border: 1px solid rgba(0, 0, 0, 0.1);">
+        </iframe>
+      </div>
+      
       <p>To provide the client with design flexibility, we created both light and dark mode variations of the website to showcase how each could reflect 
         different tones and branding directions. After reviewing both, the client opted for the light mode, aligning with their vision of a professional, 
         warm, and uplifting user experience. </p>
@@ -126,20 +140,33 @@
       <h2>Additional Resources</h2>
 
       <h3><i>Client Feedback</i></h3>
-      <img src="Media/JasonLetter.png" alt="Image of Client Feedback" >
+      <img src="Media/JasonLetter.png" alt="Image of Client Feedback" class="feedback-img">
 
-      <p>Check out Turtle Island Charity's full website redesign ↓  </p>
+      <p><strong>Check out Turtle Island Charity's full website redesign ↓</strong></p>
       <a href="www.turtleislandcharity.com" target="_blank">www.turtleislandcharity.com</a>
 
     </div>
   </section>
+  
+  <a href="#top" class="scroll-top-link">Back to top ↑</a>
+
 
   <footer class="site-footer">
     <p><strong>Built from scratch with love.</strong></p>
     <p>© 2025. Kiley Zheng.</p>
   </footer>
   
-
+  <script>
+    document.querySelector('.scroll-top-link').addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default jump
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+  
+  
 
 </body>
 </html>
