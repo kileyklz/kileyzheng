@@ -129,7 +129,7 @@ display: none;
 .portfolio {
     display: grid !important;  /* Force grid layout */
     grid-template-columns: 1fr !important; /* stack items on top of each other */
-    padding: 20px 8px;
+    padding: 20px 0px;
     gap: 20px;
     justify-content: left;
   }
