@@ -55,7 +55,8 @@
       <!-- Text Content -->
       <div class="about-text">
         <p>
-          Hi, I’m Kiley Zheng — a Digital Enterprise Management student at the University of Toronto, passionate about blending technology, creativity, and community. My background combines strategic thinking with visual storytelling, and I find joy in creating experiences that feel both thoughtful and meaningful.
+          Hi, I’m Kiley Zheng. I study Digital Enterprise Management at the University of Toronto, with passion for blending technology and creativity. 
+          My background combines strategic thinking with visual storytelling, and I find joy in creating experiences that feel both meaningful and thoughtful.
         </p>
         <p>
           When I’m not organizing design events, prototyping websites, or exploring the intersection between UX and business, you’ll probably find me sipping matcha (which, let’s be honest, I can’t live without — you can even spot it in my animated logo ☕💚).
@@ -71,12 +72,37 @@
       </div>
     </div>
   </section>
+
+  <hr style="border: none; border-top: 1px solid #ccc; width: 80%; margin: 40px auto;">
+
+
+  <section class="pet-section">
+    <div class="pet-content">
+      <p>
+        I also have two adorable fur babies — <strong>BeiBei (贝贝)</strong>, a fluffy Maltese, and <strong>DouDou (豆豆)</strong>, a playful red Border Collie. They bring so much joy and energy to my life!
+      </p>
+      <img src="Media/dogs.png" alt="BeiBei and DouDou" class="pet-photo">
+    </div>
+  </section>
   
+  
+  <a href="#top" class="scroll-top-link">Back to top ↑</a>
+
   <footer class="site-footer">
-    <p><strong>Built from scratch with love.</strong></p>
-    <p>© 2025. Kiley Zheng.</p>
-  </footer>
+      <p><strong>Built from scratch with love.</strong></p>
+      <p>© 2025. Kiley Zheng.</p>
+    </footer>
+    
   
+  <script>
+  document.querySelector('.scroll-top-link').addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default jump
+      window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+      });
+  });
+  </script>
 
 </body>
 </html>

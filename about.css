@@ -212,7 +212,64 @@ outline-offset: -4px;
 .about-image img {
     max-width: 300px;
 }
+
+.pet-section {
+    padding: 40px 20px;
+  }
+
+  .pet-content p {
+    font-size: 1rem;
+  }
+
+  .pet-photo {
+    max-width: 100%;
+  }
 }
+
+
+.pet-section {
+    padding: 60px 40px;
+    background-color: #fafafa;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+  }
+  
+  .pet-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .pet-content p {
+    font-size: 1.15rem;
+    color: #444;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .pet-photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .scroll-top-link {
+    display: block;
+    text-align: center;
+    margin: 60px auto 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #888;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  .scroll-top-link:hover {
+    color: #555; 
+    cursor: pointer;
+  }
+  
 
 .site-footer {
     background-color: #e0e0e0; /* soft grey */
