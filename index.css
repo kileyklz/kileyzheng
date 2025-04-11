@@ -131,7 +131,7 @@ display: none;
     grid-template-columns: 1fr !important; /* stack items on top of each other */
     padding: 20px 8px;
     gap: 20px;
-    justify-content: center;
+    justify-content: left;
   }
   .portfolio-item {
     width: 100%;
