@@ -204,7 +204,6 @@ html {
     gap: 50px; /* spacing between items */
     padding: 40px 20px;
     width: 100%;
-    flex-wrap: wrap;
 }
 
 .portfolio-item {
