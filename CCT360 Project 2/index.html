@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to external CSS file -->
+  <link href="index.css" rel="stylesheet"> 
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  
+  <!-- Link for Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- Vertical Navigation -->
+  <div class="vertical-nav">
+    <a href="#hero">home</a>
+    <a href="#about">about</a>
+    <a href="#gallery">gallery</a>
+    <a href="#resume">resume</a>
+    <a href="#recentwork">projects</a>
+    <a href="#contact">contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div id="hero" class="hero" style="position: relative; text-align: center; color: #fff; ">
+  <!-- Hero Image -->
+  <img src="images/background1.jpg" alt="Hero Background" 
+       style="width: 100%; height: 100vh; object-fit: cover; position: absolute; top: 0; left: 0; z-index: -2;">
+  
+  <!-- Color Overlay -->
+  <div class="color-overlay"></div>
+  
+  <div class="container">
+    <!-- Profile Image -->
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-6 text-center">
+        <img src="images/pfpheadshot.jpg" alt="Kiley Zheng" 
+              class="rounded-circle mb-3 img-fluid" 
+              data-bs-toggle="tooltip" 
+              title="Image taken in Vancouver, BC" 
+              style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+      </div>
+    </div>
+    <!-- Name and Tagline -->
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-8 text-center">
+        <h1 class="display-5 fw-bold" style="font-weight: bolder;">Kiley Zheng</h1>
+        <p class="lead fw-medium" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Web Developer | Designer | Student</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<div id="about" class="section section-white">
+  <h2 class="text-center">About Me</h2>
+  <p class="lead text-center mx-auto" style="max-width: 800px;">
+    Hello! My name is Kiley and I am currently studying Digital Enterprise Management at the University of Toronto. 
+    I am an aspiring UI/UX designer and web developer. I have honed skills in HTML/CSS, Figma, Bootstrap 5, and Javascript through various academic 
+    and personal projects. I'm excited to apply my creativity, technical expertise, and intercultural fluency to create impactful digital 
+    solutions that enhance user experience and are aesthetically pleasing.
+  </p>
+  <p class="lead text-center mx-auto" style="max-width: 800px;"><strong>To view my process on creating this website, check out the PDF below ↓</strong></p>
+    <div style="display: flex; justify-content: center; align-items: center; padding-top: 15px;">
+      <a href="pdf_files/CCT360 - Project2Process.pdf" target="_blank">
+        <button type="button" class="btn btn-outline-dark text">PDF of Project Creation Process</button>
+      </a>
+    </div>  
+
+  <hr class="border-dark" style="width: 80%; margin: 50px auto;">
+
+  <!-- Interests Section -->
+  <h3 class="text-center">My Interests</h3>
+  <div class="container py-3">
+    <div class="row g-3">
+      <!-- Skating Card -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100">
+          <img src="images/skate.jpg" class="card-img-top" alt="Skating">
+          <div class="card-body">
+            <h5 class="card-title">Skating</h5>
+            <p class="card-text">
+              I have figure skated for 8 years, and I was previously part of Team BC. I love the rink as it was almost like my second 
+              home! My favourite jump is the Double Axel and my favourite spin is any combo spin ending with an I-Spin.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skiing Card -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100">
+          <img src="images/skiing.jpg" class="card-img-top" alt="Skiing">
+          <div class="card-body">
+            <h5 class="card-title">Skiing</h5>
+            <p class="card-text">
+              Skiing and snowboarding are now my favourite winter hobbies! My family always goes to Whistler Blackcomb 
+              during every weekend in the winter. I love gliding across soft, powder snow!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swimming Card -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100">
+          <img src="images/swimpic.jpg" class="card-img-top" alt="Swimming">
+          <div class="card-body">
+            <h5 class="card-title">Swimming</h5>
+            <p class="card-text">
+              In highschool, I was in the Mantas Swimming Club, and participated in highschool swim meets where we recieved 
+              the BC School Sports AAA Aquatics Banner, Fraser North Zone Championship Banner, BNWSAA Swimming Championship Banner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="border-dark" style="width: 80%; margin: 70px auto;">
+
+  <!-- Figure Skating Section -->
+  <h3 class="text-center mt-4">Figure Skating</h3>
+  <div class="center-video text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8">
+          <video class="video-fluid w-100" style="max-width: 400px;" controls muted loop>
+            <source src="video/skating.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Photo Gallery Section -->
+  <div id="gallery" class="section section-black">
+    <h2>Photography</h2>
+
+    <p class="lead text-center mx-auto" style="max-width: 800px; padding-bottom: 10px;">
+      Here, I showcase my photography skills. Photography is a hobby of mine and I enjoy it because you are able to capture points of 
+      time in your life and keep them for memories.
+    </p>
+    <!-- Photography Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto" style="max-width: 800px; margin-bottom: 30px;">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- First slide -->
+        <div class="carousel-item active">
+          <img class="d-block w-100 img-fluid" src="images/photography/gallery1.jpg" alt="First slide">
+        </div>
+        <!-- Second slide -->
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="images/photography/gallery2.jpg" alt="Second slide">
+        </div>
+        <!-- Third slide -->
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="images/photography/gallery3.jpg" alt="Third slide">
+        </div>
+        <!-- Fourth slide -->
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="images/photography/gallery4.jpg" alt="Fourth slide">
+        </div>
+        <!-- Fifth slide -->
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="images/photography/gallery5.jpg" alt="Fifth slide">
+        </div>
+        <!-- Sixth slide -->
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="images/photography/gallery6.jpg" alt="Sixth slide">
+        </div>
+      </div>
+      <!-- Previous control -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <!-- Next control -->
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div id="resume" class="section section-white">
+    <h2>Resume</h2>
+    <div style="display: flex; justify-content: center; align-items: center; padding-top: 15px;">
+      <a href="pdf_files/Kiley Zheng Resume.pdf" target="_blank">
+        <button type="button" class="btn btn-outline-dark text">PDF of Resume</button>
+      </a>
+    </div>    
+      <div class="container py-5">
+      <div class="row justify-content-center">
+        <!-- Left Column -->
+        <div class="col-md-5">
+          <!-- Profile Overview -->
+          <div class="mb-4">
+            <h4 class="fw-bold">Profile Overview</h4>
+            <p class="lead mx-auto" style="text-align: justify;">
+              Hello! My name is Kiley, and I am currently studying Digital Enterprise Management (DEM) at the University of Toronto. 
+              I am an aspiring UI/UX designer and web developer. I have honed skills in HTML/CSS, Figma, Bootstrap 5, and Javascript through various academic 
+              and personal projects. I'm excited to apply my creativity, technical expertise, and intercultural fluency to create impactful digital 
+              solutions that enhance user experience and are aesthetically pleasing.
+            </p>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="mb-4">
+            <h4 class="fw-bold">Contact Information</h4>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-envelope"></i> <a href="mailto:kiley.zheng@mail.utoronto.ca" 
+                class="text-black text-decoration-none" 
+                aria-label="Email Kiley">kiley.zheng@mail.utoronto.ca</a></li>
+              <li>
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <span class="sr-only">Phone number:</span> 
+                <a href="tel:+17789879656" 
+                    class="text-black text-decoration-none" 
+                    aria-label="Call this number: +1 (778)-987-9656">+1 (778)-987-9656</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span class="sr-only">Location:</span>
+                <span aria-label="Located in Toronto, Ontario, Canada">Toronto, Ontario, Canada</span>
+              </li>
+              
+            </ul>
+          </div>
+
+          <!-- Skills -->
+          <h4 class="fw-bold">Skills</h4>
+            <!-- Beginner and Expert labels -->
+          <div class="skill-labels">
+            <span>Beginner</span>
+            <span>Expert</span>
+          </div>
+          <div class="skill">
+            <span>HTML/CSS</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+        
+          <div class="skill">
+            <span>Javascript</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%;"></div>
+            </div>
+          </div>
+        
+          <div class="skill">
+            <span>Python, Tkinter, Pygame</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 50%;"></div>
+            </div>
+          </div>
+        
+          <div class="skill">
+            <span>Java</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%;"></div>
+            </div>
+          </div>
+        
+          <div class="skill">
+            <span>Figma</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+        
+          <div class="skill">
+            <span>Adobe XD</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%;"></div>
+            </div>
+          </div>
+        
+          <div class="skill">
+            <span>Canva</span>
+            <div class="progress">
+              <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-5">
+
+          <!-- Education Section -->
+          <div class="mb-4">
+            <h4 class="fw-bold">Education</h4>
+            <div class="accordion" id="educationAccordion">
+              <!-- HBA in Digital Enterprise Management -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="educationHeadingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#educationCollapseOne" aria-expanded="true" aria-controls="educationCollapseOne">
+                    HBA in Digital Enterprise Management
+                  </button>
+                </h2>
+                <div id="educationCollapseOne" class="accordion-collapse collapse show" aria-labelledby="educationHeadingOne" data-bs-parent="#educationAccordion">
+                  <div class="accordion-body">
+                    <p class="text-muted">University of Toronto | SGPA: 3.70; CGPA: 3.4</p>
+                    <ul>
+                      <li><i>Global and Intercultural Fluency Training Series Program (GIFTS)</i></li>
+                      <ul>
+                        <li>Committed to and participated in multi-week group sessions; developed leadership and communication skills in facilitating cultural relationships in intercultural environments</li>
+                        <li>Demonstrated strong empathy and care for the global community</li>
+                      </ul>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- High School Diploma -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="educationHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#educationCollapseTwo" aria-expanded="false" aria-controls="educationCollapseTwo">
+                    High School Diploma
+                  </button>
+                </h2>
+                <div id="educationCollapseTwo" class="accordion-collapse collapse" aria-labelledby="educationHeadingTwo" data-bs-parent="#educationAccordion">
+                  <div class="accordion-body">
+                    <p class="text-muted">Burnaby North Secondary School | GPA: 4.0</p>
+                    <ul>
+                      <li><i>BN Marketing Scholarship</i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="mb-5">
+            <h4 class="fw-bold">Experience</h4>
+            <div class="accordion" id="experienceAccordion">
+              <!-- UTM The Design Hub -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    UTM The Design Hub
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <p class="text-muted">Events VP, October 2024 — Present</p>
+                    <ul>
+                      <li>Creates event/budget plans for various design challenges/competitions</li>
+                      <li>Acted as the host and MC for design competitions</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- UTM Fintech -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    UTM Fintech
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <p class="text-muted">Events Director, Jan 2024 — April 2024</p>
+                    <ul>
+                      <li>Created detailed event plans for fintech panel events</li>
+                      <li>Worked and communicated with other teams to collaborate on the winter panel event</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Youth Insights -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Youth Insights (Non-Profit Organization)
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <p class="text-muted">Co-Founder & Co-President, Jan 2021 — June 2022</p>
+                    <ul>
+                      <li>Lead the directors and oversees the organization of 50 students globally</li>
+                      <li>Plans and hosts virtual events/panels, interviews with industry professionals, and fundraisers</li>
+                      <li>Conducts interviews and oversees the recruitment process for new members</li>
+                      <li>NSG Grant Recipient, applied for and received a grant for the organization</li>
+                      <li>Created meeting plans and organization growth plans</li>
+                      <li>Handled the social media account, along with creating marketing posts on Canva</li>
+                      <li>Designed and created the website for the organization</li>
+                      <li>Worked and communicated with other teams to collaborate on the winter panel event</li>
+
+                      <!--
+                      <li>Led the directors and organized a team of 50 students globally</li>
+                      <li>Planned and hosted virtual events, panels, and fundraisers</li>
+                      <li>Managed social media accounts and created marketing posts</li>
+                      -->
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="container py-5">
+      <h4 class="text-center mb-4">Course Overview</h4>
+      <div class="table-container mx-auto">
+        <table class="table table-striped table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>Year</th>
+              <th>Course Code</th>
+              <th>Course Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- First Year -->
+            <tr>
+              <td rowspan="7">First Year</td>
+              <td>CCT109H5</td>
+              <td>Contemporary Communication Technologies</td>
+            </tr>
+            <tr>
+              <td>CCT110H5</td>
+              <td>Rhetoric and Media</td>
+            </tr>
+            <tr>
+              <td>CCT111H5</td>
+              <td>Critical Coding</td>
+            </tr>
+            <tr>
+              <td>CCT112H5</td>
+              <td>Introduction to Management in the Networked Information Economy</td>
+            </tr>
+            <tr>
+              <td>EDS100H5</td>
+              <td>Introduction to Education Studies</td>
+            </tr>
+            <tr>
+              <td>ENV100Y5</td>
+              <td>The Environment</td>
+            </tr>
+            <tr>
+              <td>PSY100H1</td>
+              <td>Intro Psychology</td>
+            </tr>
+    
+            <!-- Second Year -->
+            <tr>
+              <td rowspan="9">Second Year</td>
+              <td>CCT203H5</td>
+              <td>Business Research Methods (DEM)</td>
+            </tr>
+            <tr>
+              <td>CCT206H5</td>
+              <td>Law, Technology and Culture</td>
+            </tr>
+            <tr>
+              <td>CCT211H5</td>
+              <td>Fundamentals of User Interface Programming</td>
+            </tr>
+            <tr>
+              <td>CCT219H5</td>
+              <td>Media Economics I (DEM)</td>
+            </tr>
+            <tr>
+              <td>CCT221H5</td>
+              <td>Digital Marketing I (DEM)</td>
+            </tr>
+            <tr>
+              <td>CCT224H5</td>
+              <td>Organizational Studies I (DEM)</td>
+            </tr>
+            <tr>
+              <td>CCT225H5</td>
+              <td>Information Systems</td>
+            </tr>
+            <tr>
+              <td>CCT260H5</td>
+              <td>Web Development and Design I</td>
+            </tr>
+            <tr>
+              <td>CCT261H5</td>
+              <td>Speculative Design I (DEM)</td>
+            </tr>
+    
+            <!-- Third Year -->
+            <tr>
+              <td rowspan="9">Third Year</td>
+              <td>CCT302H5</td>
+              <td>Developing and Managing Communication Campaigns & Projects</td>
+            </tr>
+            <tr>
+              <td>CCT321H5</td>
+              <td>Introduction to Finance (DEM)</td>
+            </tr>
+            <tr>
+              <td>CCT324H5</td>
+              <td>Organizational Studies II (DEM)</td>
+            </tr>
+            <tr>
+              <td>CCT325H5</td>
+              <td>Media Economics II</td>
+            </tr>
+            <tr>
+              <td>CCT328H5</td>
+              <td>Project Management</td>
+            </tr>
+            <tr>
+              <td>CCT354H5</td>
+              <td>Digital Marketing II</td>
+            </tr>
+            <tr>
+              <td>CCT355H5</td>
+              <td>Critical Approaches to Innovation (DEM)</td>
+            </tr>
+            <tr>
+              <td>CCT360H5</td>
+              <td>Web Development and Design II</td>
+            </tr>
+            <tr>
+              <td>CCT361H5</td>
+              <td>Speculative Design II (DEM)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Time-Based Recent Work Section -->
+<div id="recentwork" class="section section-black">
+  <div class="container py-5">
+    <h2 class="text-center mb-4 text-white">My Recent Work</h2>
+    <p class="lead text-center mx-auto text-white">Check out my recent academic work!</p>
+    <div class="timeline">
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>CCT302 Developing and Managing Communication Campaigns: Marketing Communications Plan for Create Wellness Inc.</h5>
+          <small class="text-muted">December 2024</small>
+          <p>This paper outlines a strategic marketing campaign, "Better Health, Better Performance," designed to elevate brand awareness and 
+             expand the consumer base of Create Wellness, a health supplement company specializing in creatine gummies. <i>Check it out: </i> 
+            <a href="pdf_files/CCT302 Final Group Paper_Group 5.pdf" target="_blank">View PDF of Paper</a>
+          </p>
+          <a href="https://www.canva.com/design/DAGW3L8iTic/QBzi8GIIxvZwXvnuzTh7Cg/view?utm_content=DAGW3L8iTic&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" data-bs-toggle="tooltip" title="Click to view more">
+            <img src="images/work/CCT302 - Create Wellness.png" alt="CCT302 Developing and Managing Communication Campaigns: Marketing Communications Plan for Create Wellness Inc." class="img-fluid rounded">
+          </a>
+          <p class="text-muted text-center">Click image to view presentation</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>CCT324 Organizational Studies II: Organizational Issues in Walmart Inc.</h5>
+          <small class="text-muted">November 2024</small>
+          <p>The paper explores organizational challenges at Walmart, focusing on employee dissatisfaction, retention issues, and workplace 
+            safety. It provides a detailed analysis of the root causes of these problems and offers data-driven recommendations inspired by 
+            industry best practices to improve employee well-being, foster inclusivity, and promote a safer work environment. <i>Check it out: </i> 
+            <a href="pdf_files/CCT324 Final Paper.pdf" target="_blank">View PDF of Paper</a>
+          </p>
+          <a href="https://www.canva.com/design/DAGXEAoZzOQ/mYKiQGpOVvwxM2npIe2-UQ/view?utm_content=DAGXEAoZzOQ&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" data-bs-toggle="tooltip" title="Click to view more">
+            <img src="images/work/CCT324 Walmart.png" alt="CCT324 Organizational Studies II: Organizational Issues in Walmart Inc." class="img-fluid rounded">
+          </a>
+          <p class="text-muted text-center">Click image to view presentation</p>
+        </div>
+      </div>
+
+      <!-- Timeline Item 3 -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h5>CCT361 Speculative Design II: Project Plan</h5>
+          <small class="text-muted">September 2024</small>
+          <p>The "UniSync" app is a speculative design project aimed at helping university students manage academic schedules efficiently by scanning 
+             syllabus PDFs, integrating key dates with digital calendars, and providing tools like grade tracking and customizable reminders. It 
+             focuses on enhancing productivity and academic success through seamless organization. <i>Check it out: </i>
+            <a href="pdf_files/CCT361-Group 4 Project Plan.pdf" target="_blank">View PDF of Paper</a>
+          </p>
+          <a href="https://www.canva.com/design/DAGXF-lgJ6c/ELrvlI0eiMV8pbHLRINtnQ/view?utm_content=DAGXF-lgJ6c&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" data-bs-toggle="tooltip" title="Click to view more">
+            <img src="images/work/CCT361 Final Demo.png" alt="CCT361 Speculative Design II: Project Plan" class="img-fluid rounded">
+          </a>
+          <p class="text-muted text-center">Click image to view presentation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div id="contact" class="section section-white">
+  <h2>Contact Me</h2>
+  <p class="lead text-center mx-auto">I'd love to hear from you! Feel free to reach out through the form below or schedule a meeting.</p>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Contact Form -->
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="button" id="showVerificationModal" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#scheduleModal">Schedule a Meeting</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Verification -->
+  <div class="modal fade" id="verificationModal" tabindex="-1" aria-labelledby="verificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="verificationModalLabel">Verify Your Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Please verify the details before submitting the form.</p>
+          <ul>
+            <li><strong>Name:</strong> <span id="modalName"></span></li>
+            <li><strong>Email:</strong> <span id="modalEmail"></span></li>
+            <li><strong>Message:</strong> <span id="modalMessage"></span></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+          <button type="button" id="confirmAndSubmit" class="btn btn-primary">Confirm and Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Scheduling Meeting -->
+  <div class="modal fade" id="scheduleModal" tabindex="-1" aria-labelledby="scheduleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="scheduleModalLabel">Schedule a Meeting</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="scheduleMeetingForm">
+            <div class="mb-3">
+              <label for="meetingName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="meetingName" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="meetingEmail" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="meetingEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="meetingDate" class="form-label">Preferred Date</label>
+              <input type="date" class="form-control" id="meetingDate" required>
+            </div>
+            <div class="mb-3">
+              <label for="meetingTime" class="form-label">Preferred Time</label>
+              <input type="time" class="form-control" id="meetingTime" required>
+            </div>
+            <button type="button" id="submitMeeting" class="btn btn-primary">Request Meeting</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: About -->
+      <div class="col-md-4 mb-3">
+        <h5>About Me</h5>
+        <p>
+          My name is Kiley Zheng, a passionate web developer and designer. 
+          I hope to create impactful digital solutions that enhance user experience.
+        </p>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#hero" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#about" class="text-white text-decoration-none">About</a></li>
+          <li><a href="#gallery" class="text-white text-decoration-none">Gallery</a></li>
+          <li><a href="#resume" class="text-white text-decoration-none">Resume</a></li>
+          <li><a href="#recentwork" class="text-white text-decoration-none">Projects</a></li>
+          <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-envelope"></i> <a href="mailto:kiley.zheng@mail.utoronto.ca" 
+            class="text-white text-decoration-none" 
+            aria-label="Email Kiley">kiley.zheng@mail.utoronto.ca</a>
+          </li>
+          <li>
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <span class="sr-only">Phone number:</span> 
+            <a href="tel:+17789879656" 
+                class="text-white text-decoration-none" 
+                aria-label="Call this number: +1 (778)-987-9656">+1 (778)-987-9656</a>
+          </li>
+          <li><i class="fas fa-map-marker-alt"></i> Toronto, Ontario, Canada</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-light">
+
+    <!-- Footer Bottom -->
+    <div class="text-center">
+      <p class="mb-0">&copy; 2024 Kiley Zheng | My Personal Website</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- For Tooltips -->
+  <script>
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+
+  <!-- For Contact Form Verification Modal -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const submitButton = document.getElementById('showVerificationModal');
+      const modalName = document.getElementById('modalName');
+      const modalEmail = document.getElementById('modalEmail');
+      const modalMessage = document.getElementById('modalMessage');
+      const verificationModal = new bootstrap.Modal(document.getElementById('verificationModal'));
+      const confirmAndSubmitButton = document.getElementById('confirmAndSubmit');
+  
+      submitButton.addEventListener('click', function () {
+        modalName.textContent = document.getElementById('name').value || 'Not provided';
+        modalEmail.textContent = document.getElementById('email').value || 'Not provided';
+        modalMessage.textContent = document.getElementById('message').value || 'Not provided';
+  
+        verificationModal.show();
+      });
+  
+      // Confirm and Submit button action
+      confirmAndSubmitButton.addEventListener('click', function () {
+          window.location.href = 'index.html';
+      });
+
+      // Schedule Meeting Modal Action
+      const submitMeetingButton = document.getElementById('submitMeeting');
+      submitMeetingButton.addEventListener('click', function () {
+        window.location.href = 'index.html';
+      });
+  
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
