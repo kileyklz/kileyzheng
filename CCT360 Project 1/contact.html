@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior Contact</title>
+    <link href="css/contact.css" rel="stylesheet"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor|Antic|Be Vietnam Pro|Beau Rivage|Metal">
+    <script src="https://kit.fontawesome.com/49415193d5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- SAME HEADER AS INDEX -->
+    <header>
+        <h1>DIOR</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li> <!-- Link to home page -->
+                <li><a href="diorproduct.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-search"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <!-- PAGE TITLE -->
+    <h2>Contact Us</h2>
+
+    <hr style="color: #333;">
+
+    <!-- CONTACT US FORM -->
+    <section >
+        <form class="my-form">
+            <p> Please fill in the form below for an inquiry. </p>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="text">Subject:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <div style="text-align: center;">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+        </div>
+    </div>
+
+    <hr style="color: #333;">
+
+    <!-- COLLAPSIBLE FAQ SECTION -->
+
+    <h2>FAQ</h2>
+
+    <div class="faq-section">
+        <button class="collapsible">Can I purchase DIOR products on DIOR.COM?</button>
+        <div class="content">
+            <p>A product is available for online purchase on Dior.com whenever the word “Order” appears. </p>
+        </div>
+    
+        <button class="collapsible">How can I find a product DIOR.COM</button>
+        <div class="content">
+            <p>The products on Dior.com are organized by categories and by product line.</p>
+        </div>
+    
+        <button class="collapsible">How can I attend a DIOR fashion show?</button>
+        <div class="content">
+            <p>Dior does not sell tickets to the fashion shows. Guests invited to our fashion shows are selected by our press 
+            relations department located at our Paris headquarters.</p>
+        </div>
+    
+        <button class="collapsible">How can I subscribe/unsubscribe to the DIOR newsletter?</button>
+        <div class="content">
+            <p>To subscribe to our newsletter, please visit the "Newsletter" section and fill in the registration form.
+            If you wish to unsubscribe from our newsletter, click on the link at the bottom of each Dior newsletter. </p>
+        </div>
+    
+        <button class="collapsible">How can I create an account?</button>
+        <div class="content">
+            <p>You can create your Dior customer account by clicking on the "Your account" section located in the menu at the top of our website. 
+                Then click on "Create an Account" and fill in the obligatory information marked with an asterisk. 
+                Finally, click on "Validate". You will be sent a confirmation email to the address provided when creating your account. </p>
+        </div>
+    </div>
+    
+
+<!-- SAME FOOTER, QUICK LINKS AS INDEX-->
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Code of Conduct</h3>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Supplier Code of Conduct</a></li>
+                <li><a href="#">Ethical Standards</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-logo">
+        <h1>DIOR</h1>
+    </div>
+</footer>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

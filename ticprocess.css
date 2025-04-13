@@ -192,7 +192,15 @@ text-align: justify;
     border-radius: 8px; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
-
+  .sitemap-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
     
 @media (max-width: 768px) {
 .project-process {
@@ -220,7 +228,12 @@ text-align: justify;
     margin: 30px auto 20px;
     max-width: 100%;
     padding: 0 0px;
-  }
+}
+.sitemap-img {
+    padding: 0 10px;
+    margin: 20px auto;
+    max-width: 100%;
+}
 }  
 
 .scroll-top-link {

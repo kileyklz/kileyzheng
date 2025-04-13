@@ -1,0 +1,249 @@
+/* Same header styling as index.css: this section styles the header, logo, navigation links, and icons */
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin: 0;
+    font-size: 36px; 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    margin: 10px 0; 
+}
+
+.header-icons {
+    position: absolute; /* Position the icons */
+    right: 20px; 
+    top: 20px; 
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between icons */
+}
+
+.header-icons i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Change color on hover */
+.header-icons i:hover {
+    color: #555; 
+}
+
+h1 {
+    font-size: 35px;
+    font-family: Times, serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Be Vietnam Pro", "Actor", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    color: gray;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: black;
+}
+
+/* Change while on hover */
+nav ul li a:hover {
+    color: black;
+}
+
+h2{
+    text-align: center;
+    font-family: Times, serif;
+    padding-top: 25px;
+}
+
+hr{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 70%;
+}
+
+h3{
+    padding-top: 30px;
+    padding-left: 220px;
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-family: "Be Vietnam Pro", "Actor", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.product-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    flex-wrap: wrap;
+    gap: 40px; /* Space between products */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+
+}
+
+.product {
+    width: calc(50% - 150px); /* Each product takes roughly 50% of the container width, minus the gap */
+    text-align: center;
+}
+
+.product-slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 450px; /* Carousel max width */
+    margin: auto;
+}
+
+.slides img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: none; 
+}
+
+.slides img:first-child {
+    display: block; /* Show the first image */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+/* Styling for the category titles */
+.category-title {
+    width: 100%; 
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0 20px; 
+    font-weight: bold;
+}
+
+
+h4{
+    font-family: "Be Vietnam Pro", "Actor", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product p{
+    font-family: "Be Vietnam Pro", "Actor", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Same footer styling as index: styles the footer content and layout */
+footer {
+    background-color: #fff;
+    padding: 30px 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1000px; 
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo h1 {
+    font-size: 35px; 
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    margin: 0;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 1px; 
+    left: 50%;
+    transform: translateX(-50%); 
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag -->
+    <title>Dior Products</title>
+    <link href="css/product.css" rel="stylesheet"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor|Antic|Be Vietnam Pro|Beau Rivage|Metal">
+    <script src="https://kit.fontawesome.com/49415193d5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- SAME HEADER AS INDEX -->
+    <header>
+        <h1>DIOR</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li> <!-- Link to home page -->
+                <li><a href="diorproduct.html">PRODUCTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-search"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <!-- PAGE TITLE -->
+    <h2>2024-2025 Fall-Winter Exclusive Products</h2>
+
+    <hr style="color: #333;">
+
+    <h3>Wallets</h3>
+
+    <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product" data-product="1">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/wf1.png" alt="Men's Saddle Dior Card Holder front side">
+                    <img src="Images/wb1.png" alt="Men's Saddle Dior Card Holder back side">
+                </div>
+                <button class="prev" onclick="prevSlide(1)">&#10094;</button>
+                <button class="next" onclick="nextSlide(1)">&#10095;</button>
+            </div>
+            <h4>Men's Saddle Card Holder</h4>
+            <p>$540.00</p>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product" data-product="2">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/Wallet Front 2.png" alt="Women's Saddle Bloom Dior Card Holder front side">
+                    <img src="Images/Wallet Back 2.png" alt="Women's Saddle Bloom Dior Card Holder back side">
+                </div>
+                <button class="prev" onclick="prevSlide(2)">&#10094;</button>
+                <button class="next" onclick="nextSlide(2)">&#10095;</button>
+            </div>
+            <h4>Women's Saddle Bloom Card Holder</h4>
+            <p>$610.00</p>
+        </div>
+    </div>
+    
+    <!-- Bags Section -->
+    <h3 class="special">Bags</h3>
+    <div class="product-container">
+        <!-- Product 3 -->
+        <div class="product" data-product="3">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/Bag Front.png" alt="Medium Dior Bobby Bag front side">
+                    <img src="Images/Bag Back.png" alt="Medium Dior Bobby Bag back side">
+                </div>
+                <button class="prev" onclick="prevSlide(3)">&#10094;</button>
+                <button class="next" onclick="nextSlide(3)">&#10095;</button>
+            </div>
+            <h4>Medium Dior Bobby Bag</h4>
+            <p>$5200.00</p>
+        </div>
+    </div>
+    
+    <!-- Clothing & Shoes Section -->
+    <h3 class="special">Clothing & Shoes</h3>
+    <div class="product-container">
+        <!-- Product 4  -->
+        <div class="product" data-product="4">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/hf1.png" alt="Navy Dior Oblique Hoodie Front">
+                    <img src="Images/hb1.png" alt="Navy Dior Oblique Hoodie Back">
+                </div>
+                <button class="prev" onclick="prevSlide(4)">&#10094;</button>
+                <button class="next" onclick="nextSlide(4)">&#10095;</button>
+            </div>
+            <h4>Navy Dior Oblique Relaxed-Fit Hooded Sweatshirt</h4>
+            <p>$2600.00</p>
+        </div>
+    
+        <!-- Product 5 -->
+        <div class="product" data-product="5">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/hf2.png" alt="Christian Dior Gray Couture Sweatshirt Front">
+                    <img src="Images/hb2.png" alt="Christian Dior Gray Couture Sweatshirt Back">
+                </div>
+                <button class="prev" onclick="prevSlide(5)">&#10094;</button>
+                <button class="next" onclick="nextSlide(5)">&#10095;</button>
+            </div>
+            <h4>Christian Dior Gray Couture Sweatshirt</h4>
+            <p>$2200.00</p>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product" data-product="6">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/bootss.png" alt="Side view of men's Dior Chelsea boots">
+                    <img src="Images/bootsf.png" alt="Front-top view of men's Dior Chelsea boots">
+                </div>
+                <button class="prev" onclick="prevSlide(6)">&#10094;</button>
+                <button class="next" onclick="nextSlide(6)">&#10095;</button>
+            </div>
+            <h4>Men's Dior Timeless Chelsea Boot</h4>
+            <p>$1700.00</p>
+        </div>
+    </div>
+
+    <!-- Beauty Section -->
+    <h3 class="special">Beauty</h3>
+    <div class="product-container">
+        <!-- Product 7 -->
+        <div class="product" data-product="7">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/Lipstick1.png" alt="Dior Velvet Lipstick Cap-On">
+                    <img src="Images/Lipstick2.png" alt="Dior Velvet Lipstick Cap-Off">
+                </div>
+                <button class="prev" onclick="prevSlide(7)">&#10094;</button>
+                <button class="next" onclick="nextSlide(7)">&#10095;</button>
+            </div>
+            <h4>Couture Color Lipstick - Velvet and Satin Finishes -</h4>
+            <p>$65.00</p>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product" data-product="8">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/Lipstick4.png" alt="Dior Addict Lip Tint Laid Sideways">
+                    <img src="Images/Lipstick3.png" alt="Dior Addict Lip Tint Standing Up">
+                </div>
+                <button class="prev" onclick="prevSlide(8)">&#10094;</button>
+                <button class="next" onclick="nextSlide(8)">&#10095;</button>
+            </div>
+            <h4>Dior Addict Lip Tint</h4>
+            <p>$54.00</p>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product" data-product="9">
+            <div class="product-slideshow">
+                <div class="slides">
+                    <img src="Images/Perfume1.png" alt="Dior Blooming Bouquet Perfume Front View">
+                    <img src="Images/Perfume2.png" alt="Dior Blooming Bouquet Perfume Side/Diagonal View">
+                </div>
+                <button class="prev" onclick="prevSlide(9)">&#10094;</button>
+                <button class="next" onclick="nextSlide(9)">&#10095;</button>
+            </div>
+            <h4>Miss Dior Blooming Bouquet Roller-Pearl</h4>
+            <p>$59.00</p>
+        </div>
+    </div>
+
+
+
+<!-- SAME FOOTER, QUICK LINKS AS INDEX-->
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h5>Quick Links</h5>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h5>Contact Us</h5>
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h5>Code of Conduct</h5>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Supplier Code of Conduct</a></li>
+                <li><a href="#">Ethical Standards</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-logo">
+        <h1>DIOR</h1>
+    </div>
+</footer>
+
+
+<script>
+
+    let currentSlides = [0, 0, 0, 0, 0, 0, 0, 0, 0]; //tracks 9 products
+
+    document.addEventListener('DOMContentLoaded', () => {
+        showSlides(1, currentSlides[0]);
+        showSlides(2, currentSlides[1]);
+        showSlides(3, currentSlides[2]);
+        showSlides(4, currentSlides[3]);
+        showSlides(5, currentSlides[4]); 
+        showSlides(6, currentSlides[5]);  
+        showSlides(7, currentSlides[6]);
+        showSlides(8, currentSlides[7]);
+        showSlides(9, currentSlides[8]);
+    });
+
+    function showSlides(productIndex, slideIndex) {
+        const product = document.querySelector(`.product[data-product="${productIndex}"]`);
+        const slides = product.querySelectorAll(".slides img");
+
+        if (slideIndex >= slides.length) {
+            currentSlides[productIndex - 1] = 0;
+        }
+        if (slideIndex < 0) {
+            currentSlides[productIndex - 1] = slides.length - 1;
+        }
+
+        slides.forEach(slide => slide.style.display = 'none');
+        slides[currentSlides[productIndex - 1]].style.display = 'block';
+    }
+
+    function nextSlide(productIndex) {
+        currentSlides[productIndex - 1]++;
+        showSlides(productIndex, currentSlides[productIndex - 1]);
+    }
+
+    function prevSlide(productIndex) {
+        currentSlides[productIndex - 1]--;
+        showSlides(productIndex, currentSlides[productIndex - 1]);
+    }
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* Header styling: this section styles the header, logo, navigation links, and icons */
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the logo in the header */
+.logo {
+    margin: 0;
+    font-size: 36px; 
+}
+
+/* Styles the navigation links within the header */
+.nav-links {
+    display: flex; /* flexbox layout */
+    justify-content: center; 
+    margin: 10px 0; 
+}
+
+/* Styles the icons in the header (like search, cart, etc.) */
+.header-icons {
+    position: absolute; /* Position the icons */
+    right: 20px; 
+    top: 20px; 
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between icons */
+}
+
+.header-icons i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Change color on hover */
+.header-icons i:hover {
+    color: #555; 
+}
+
+/* Main heading styles */
+h1 {
+    font-size: 35px;
+    font-family: Times, serif;
+}
+
+h2{
+    text-align: center;
+    font-family: Times, serif;
+    padding-top: 25px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* Links inside the navigation */
+nav ul li a {
+    text-decoration: none;
+    font-family: "Be Vietnam Pro", "Actor", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    color: gray;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Underline effect for links on hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: black;
+}
+
+/* Change while on hover */
+nav ul li a:hover {
+    color: black;
+}
+
+/* Main paragraph styles */
+main p{
+    font-family: "Metal",'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+/* Special text styles */
+.special-text{
+    font-family: 'Trebuchet MS';
+    font-size: 35px;
+    text-align: center;
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+hr{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+
+.product-description {
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+/* Styles for product images */
+.product-description img {
+    width: 100%; 
+    max-width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+
+footer {
+    background-color: #fff;
+    padding: 30px 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+}
+
+/* Footer styling: styles the footer content and layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1000px; 
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-column ul li {
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo h1 {
+    font-size: 35px; 
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    margin-top: 0px;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 1px; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
