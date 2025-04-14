@@ -2,12 +2,10 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-  
 /* Navbar Container */
 .navbar {
     position: absolute;
@@ -70,6 +68,8 @@ html {
     height: 150px; 
     width: auto;
     display: block;
+    outline: 4px solid white;
+    outline-offset: -4px;
 }
 
 
@@ -124,43 +124,9 @@ display: none;
     width: auto;
     display: block;
     z-index: 999;
-    outline: 4px solid white;
-    outline-offset: -4px;
+}
 }
 
-.project-process {
-    padding: 40px 20px;
-}
-
-.background-content {
-    padding: 0 10px; 
-    text-align: left;
-}
-
-.project-process h2 {
-    font-size: 1.8rem;
-}
-
-.project-process h3 {
-    font-size: 1.3rem;
-}
-
-.project-process p {
-    font-size: 1rem;
-    text-align: left;
-}
-.feedback-img {
-    margin: 30px auto 20px;
-    max-width: 100%;
-    padding: 0 0px;
-}
-.sitemap-img {
-    padding: 0 10px;
-    margin: 20px auto;
-    max-width: 100%;
-}
-
-}
 
 /* Project Background Styles */
 .project-process {
@@ -198,60 +164,6 @@ color: #444;
 text-align: justify;
 }
 
-.iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 40px;
-  }
-  
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  .feedback-img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    display: block;
-    margin: 40px auto;
-    border-radius: 8px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-  .sitemap-img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    display: block;
-    margin: 30px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-
-
-.scroll-top-link {
-    display: block;
-    text-align: center;
-    margin: 60px auto 20px;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #888;
-    font-size: 1rem;
-    font-weight: 300;
-    text-decoration: none;
-  }
-  
-  .scroll-top-link:hover {
-    color: #555; /* slightly darker on hover */
-    cursor: pointer;
-  }
-  
-  
 
 .site-footer {
     background-color: #e0e0e0; /* soft grey */
@@ -265,20 +177,6 @@ text-align: justify;
     
     .site-footer p {
     margin: 6px 0;
+    font-size: 1rem;        
     }
-      
-
-.site-footer {
-    background-color: #e0e0e0; /* soft grey */
-    padding: 40px 20px;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
-    color: #555555;
-    margin-top: 80px;
-  }
-  
-  .site-footer p {
-    margin: 6px 0;
-  }
-  
+    
